@@ -1,0 +1,29 @@
+{
+  "name": "Netflix Binger",
+  "version": "0.0.1",
+  "description": "Automatically continue playing Netflix",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://netflix.com/*",
+        "http://www.netflix.com/*",
+        "https://netflix.com/*",
+        "https://www.netflix.com/*"
+      ],
+      "js": ["netflix-binger.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "icon_48x48_dark.png",
+    "default_title": "Netflix Binger"
+  },
+  "permissions": [
+    "declarativeContent"
+  ],
+  "manifest_version": 2
+}
