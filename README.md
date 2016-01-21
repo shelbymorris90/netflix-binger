@@ -1,5 +1,5 @@
 # netflix-binger
-Automatically continue playing Netflix
+Automatically continue playing Netflix (Chrome extension)
 
 # Install
   - Download
